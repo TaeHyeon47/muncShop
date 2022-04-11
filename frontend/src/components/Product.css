@@ -1,0 +1,48 @@
+.card-title {
+   display: flex;
+   height: auto;
+}
+
+.product-name {
+   font-size: 1.1rem;
+}
+
+.product-price {
+   font-weight: 600;
+   font-size: 1.2rem;
+   margin-bottom: 0.5rem;
+}
+
+/**************************/
+/* 944px 아래 (테블릿) */
+/**************************/
+
+@media (max-width: 59em) {
+   .product-name {
+      font-size: 1rem;
+   }
+
+   .product-price {
+      font-size: 1.1rem;
+   }
+}
+
+/**************************/
+/* 704px 아래 (미니 테블릿) */
+/**************************/
+
+@media (max-width: 44em) {}
+
+/**************************/
+/* 544px 아래 (핸드폰) */
+/**************************/
+
+@media (max-width: 34em) {
+   .product-name {
+      font-size: 0.85rem;
+   }
+
+   .product-price {
+      font-size: 1rem;
+   }
+}

@@ -1,0 +1,45 @@
+.carousel img {
+   width: 100%;
+}
+
+@media (max-width: 944px) {
+   .mobile-01 {
+      background: url(../../public/images/event/event-mo-01.jpeg) no-repeat center;
+      height: 0;
+      padding-top: 100%;
+      background-size: 100%;
+   }
+
+   .mobile-02 {
+      background: url(../../public/images/event/event-mo-02.png) no-repeat center;
+      height: 0;
+      padding-top: 100%;
+      background-size: 100%;
+   }
+
+   .mobile-03 {
+      background: url(../../public/images/event/event-mo-03.jpeg) no-repeat center;
+      height: 0;
+      padding-top: 100%;
+      background-size: 100%;
+   }
+
+   .mobile-04 {
+      background: url(../../public/images/event/event-mo-04.png) no-repeat center;
+      height: 0;
+      padding-top: 100%;
+      background-size: 100%;
+   }
+
+   .mobile-05 {
+      background: url(../../public/images/event/event-mo-05.png) no-repeat center;
+      height: 0;
+      padding-top: 100%;
+      background-size: 100%;
+   }
+
+   .mobile-01 .Image {
+      display: none;
+   }
+
+}

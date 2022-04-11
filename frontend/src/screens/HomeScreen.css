@@ -1,0 +1,14 @@
+.product-container {
+   margin: 5rem auto;
+   width: 75%;
+}
+
+/**************************/
+/* 944px 아래 (테블릿) */
+/**************************/
+
+@media (max-width: 59em) {
+   .product-container {
+      width: 90%;
+   }
+}

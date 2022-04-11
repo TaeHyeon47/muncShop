@@ -1,0 +1,123 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/**************************/
+/* GENRAL REUSABLE COMPONENTS */
+/**************************/
+
+.container {
+  /* 1140px */
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+/**************************/
+/**************************/
+/* 
+body {
+  overflow-x: hidden;
+} */
+
+main {
+  min-height: 80vh;
+}
+
+.strong {
+  font-size: 0.7rem;
+}
+
+h3 {
+  padding: 1rem 0;
+  font-size: medium;
+}
+
+h1 {
+  font-size: 1.8rem;
+  padding: 1rem 0;
+}
+
+h2 {
+  font-size: 1.4rem;
+  padding: 0.5rem 0;
+}
+
+.rating span {
+  margin: 0.1rem;
+}
+
+.card-title {
+  height: 2.6rem;
+  overflow: hidden;
+}
+
+.rm-underline {
+  text-decoration: none;
+}
+
+/* ProductCarousel */
+/* .carousel-item-next,
+.carousel-item-prev,
+.carousel-item.active {
+  display: flex;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 0;
+}
+
+.carousel img {
+  height: 120vh;
+  width: 5000px;
+  padding: 30px;
+  margin: 40px;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.carousel a {
+  margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+  .carousel-caption h2 {
+    font-size: 2.5vw;
+  }
+} */
+
+
+
+/**************************/
+/* 1344px 아래 (작은 데스크탑) */
+/**************************/
+
+/* @media (max-width: 84em) {} */
+
+/**************************/
+/* 1200px 아래 (랜드스케이프 테블릿) */
+/**************************/
+
+@media (max-width: 75em) {}
+
+/**************************/
+/* 944px 아래 (테블릿) */
+/**************************/
+
+@media (max-width: 59em) {}
+
+/**************************/
+/* 704px 아래 (미니 테블릿) */
+/**************************/
+
+@media (max-width: 44em) {}
+
+/**************************/
+/* 544px 아래 (핸드폰) */
+/**************************/
+
+@media (max-width: 34em) {}

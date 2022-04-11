@@ -1,13 +1,24 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { Provider } from "react-redux";
+import store from "./store/store";
+import "./bootstrap.min.css";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import { createBrowserHistory } from "history";
+import { wrapHistory } from "oaf-react-router";
+import { unstable_HistoryRouter as HistoryRouter } from "react-router-dom";
+
+const history = createBrowserHistory();
+wrapHistory(history);
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Provider store={store}>
+    <HistoryRouter history={history}>
+      <App />
+    </HistoryRouter>
+  </Provider>,
   document.getElementById("root")
 );
 

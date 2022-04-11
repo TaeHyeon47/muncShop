@@ -1,0 +1,145 @@
+.section-instagram {
+   overflow-x: hidden;
+   background-color: #f5e2e2;
+   display: grid;
+   grid-template-columns: 56.7fr 43.3fr;
+   padding: 6rem 0 6rem 0;
+   align-items: center;
+}
+
+.instagram-main {
+   overflow: hidden;
+   position: relative;
+   padding: 0rem 0rem 0rem 1.6rem;
+}
+
+.instagram-text {
+   color: #333;
+   font-size: 2.2rem;
+   position: absolute;
+   letter-spacing: 0.75px;
+   top: 3%;
+   left: 7%;
+   z-index: 100;
+   line-height: 1.6;
+}
+
+.instagram-text span {
+   color: #333;
+   font-size: 3.2rem;
+   letter-spacing: 0.5px;
+   text-transform: lowercase;
+}
+
+.instagram-img {
+   width: 100%;
+}
+
+.gallery {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 1.6rem;
+   padding: 1.6rem;
+   align-items: center;
+}
+
+.gallery-item {
+   overflow: hidden;
+   margin: 0;
+}
+
+.gallery-item img {
+   display: block;
+   width: 100%;
+   transition: all 0.4s;
+   cursor: pointer;
+}
+
+.gallery-item img:hover {
+   transform: scale(1.1);
+}
+
+/**************************/
+/* BELOW 1344px (Smaller desktops) */
+/**************************/
+@media (max-width: 84em) {
+   .instagram-text {
+      font-size: 1.6rem;
+   }
+
+   .instagram-text span {
+      font-size: 2.8rem;
+   }
+}
+
+/**************************/
+/* BELOW 944px (Tablets) */
+/**************************/
+@media (max-width: 59em) {
+   .instagram-main {
+      padding: 3.2rem 3.2rem 0.8rem 3.2rem;
+   }
+
+   .instagram-img {
+      transition: all 0.4s;
+      cursor: pointer;
+   }
+
+   .instagram-text {
+      font-size: 1.6rem;
+      top: 15%;
+      left: 10%;
+   }
+
+   .instagram-text span {
+      font-size: 2.8rem;
+   }
+
+   .section-instagram {
+      grid-template-columns: 1fr;
+   }
+
+   .gallery {
+      grid-template-columns: repeat(4, 1fr);
+      padding: 0.8rem 3.2rem 3.6rem 3.2rem;
+   }
+}
+
+/**************************/
+/* BELOW 704px (Smaller tablets) */
+/**************************/
+@media (max-width: 44em) {
+   .instagram-text {
+      font-size: 1.3rem;
+      top: 18%;
+      left: 12%;
+   }
+
+   .instagram-text span {
+      font-size: 2.2rem;
+   }
+}
+
+/**************************/
+/* 544px 아래 (핸드폰) */
+/**************************/
+@media (max-width: 34em) {
+   .section-instagram {
+      padding: 1rem 0 3rem 0;
+   }
+
+   .instagram-text {
+      font-size: 0.75rem;
+      top: 15%;
+      left: 18%;
+   }
+
+   .instagram-text span {
+      font-size: 1.2rem;
+   }
+
+   .gallery {
+      grid-template-columns: repeat(3, 1fr);
+      padding: 0.2rem 3.2rem 0rem 3.2rem;
+   }
+}
