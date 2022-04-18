@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import { Link, useParams, useNavigate, useLocation } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import FormContainer from "../components/FormContainer";
-
 import {
   Row,
   Col,
@@ -15,11 +14,13 @@ import {
 import Message from "../components/Message";
 import { addToCart, removeFromCart } from "../actions/cartActions";
 
+// 장바구니 화면
 const CartScreen = () => {
   const { id } = useParams();
   const productId = id;
 
   const location = useLocation();
+  // 쿼리문의 '='을 구분자로 카트에 담길 숫자를 가져옴
   const qty = location.search ? Number(location.search.split("=")[1]) : 1;
 
   const dispatch = useDispatch();
@@ -28,19 +29,21 @@ const CartScreen = () => {
   const cart = useSelector((state) => state.cart);
   const { cartItems } = cart;
 
+  // 쿼리문의 상품 Id와 수량 qty를 상품생성 action으로 전달
   useEffect(() => {
     if (productId) {
       dispatch(addToCart(productId, qty));
     }
   }, [dispatch, productId, qty]);
 
+  // 상품 Id 값을 제품 삭제 action으로 전달
   const removeFromCartHandler = (id) => {
     dispatch(removeFromCart(id));
   };
 
+  // 주소 작성 화면으로 페이지 이동
   const checkoutHandler = () => {
     navigate("/login?redirect=/shipping");
-    // navigate(`/shipping`);
   };
 
   return (
