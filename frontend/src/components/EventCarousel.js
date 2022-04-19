@@ -1,25 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-// import { useSelector } from "react-redux";
 import { Carousel, Image } from "react-bootstrap";
-import Loader from "../components/Loader";
-import Message from "../components/Message";
 import "./EventCarousel.css";
 
 const EventCarousel = ({ products }) => {
-  // const productList = useSelector((state) => state.productList);
-  // const { loading, error } = productList;
-
-  console.log("evnet");
-  console.log(products);
-
   return (
-    // <>
-    //   {loading ? (
-    //     <Loader />
-    //   ) : error ? (
-    //     <Message variant="danger">{error}</Message>
-    //   ) : (
     <>
       <Carousel
         pause="hover"
