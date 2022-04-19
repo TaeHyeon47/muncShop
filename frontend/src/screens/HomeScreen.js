@@ -24,11 +24,17 @@ const HomeScreen = () => {
   const productList = useSelector((state) => state.productList);
   const { loading, error, products, page, pages } = productList;
 
+  console.log(products.length);
+
   return (
     <Fragment>
       <Meta />
-      {!keyword ? (
-        <EventCarousel />
+      {products.length === 0 ? (
+        <Loader />
+      ) : !keyword ? (
+        <>
+          <EventCarousel products={products} />
+        </>
       ) : (
         <div className="product-container">
           <Link to="/" className="btn btn-dark rounded">
