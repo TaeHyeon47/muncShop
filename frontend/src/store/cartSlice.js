@@ -4,6 +4,7 @@ const cartSlice = createSlice({
   name: "cart",
   initialState: { cartItems: [], shippingAddress: {} },
   reducers: {
+    // 카트에 아이템을 추가
     CART_ADD_ITEM(state, action) {
       const item = action.payload;
       // 카트에 추가된 상품이 이미 카트에 존재하는지 판단
