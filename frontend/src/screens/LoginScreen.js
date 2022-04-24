@@ -7,6 +7,7 @@ import Loader from "../components/Loader";
 import FormContainer from "../components/FormContainer";
 import { login } from "../actions/userActions";
 
+// 로그인 화면
 const LoginScreen = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -14,10 +15,10 @@ const LoginScreen = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
-  const userLogin = useSelector((state) => state.userLogin);
-  const { loading, error, userInfo } = userLogin;
+  const userLogin = useSelector((state) => state.userLogin); //로그인 Store에서 로그인 정보를 가져옴
+  const { loading, error, userInfo } = userLogin; // 로그인한 경우 userInfo 정보가 있음
 
-  let redirect = location.search ? location.search.split("=")[1] : "/";
+  let redirect = location.search ? location.search.split("=")[1] : "/"; // 검색 값이 있는 경우, 파라미터 "=" 뒤에 있는 1번째 값을 redirect에 redirect에 추가
 
   useEffect(() => {
     if (userInfo) {
