@@ -2,11 +2,13 @@ import mongoose from "mongoose";
 
 const orderSchema = mongoose.Schema(
   {
+    // 주문 유저 정보
     user: {
       type: mongoose.Schema.Types.ObjectId,
       required: true,
-      ref: "User",
+      ref: "User", //User 스키마(데이터모델) 참고
     },
+    // 주문서 상품
     orderItems: [
       {
         name: { type: String, required: true },
@@ -16,7 +18,7 @@ const orderSchema = mongoose.Schema(
         product: {
           type: mongoose.Schema.Types.ObjectId,
           required: true,
-          ref: "Product",
+          ref: "Product", //Product 스키마(데이터모델) 참고
         },
       },
     ],
