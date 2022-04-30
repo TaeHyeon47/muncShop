@@ -6,21 +6,21 @@ const orderDeliverSlice = createSlice({
   reducers: {
     // 배송 상태 요청
     ORDER_DELIVER_REQUEST(state) {
-      state.loading = true;
+      state.loading = true; // 배송 요청동안 로딩바가 나타남
     },
     // 배송 상태 성공
     ORDER_DELIVER_SUCCESS(state) {
-      state.loading = false;
-      state.success = true;
+      state.loading = false; // 배송 성공 시, 로딩바가 사라짐
+      state.success = true; // 배송 요청 성공
     },
     // 배송 상태 실패
     ORDER_DELIVER_FAIL(state, action) {
       state.loading = false;
       state.error = action.payload;
     },
-    // 주문 State 초기화
+    // 배송 상태 초기화
     ORDER_DELIVER_RESET() {
-      return {};
+      return {}; // 초기화하지 않으면 배송 정보가 뒤섞이면서 오류가 발생
     },
   },
 });

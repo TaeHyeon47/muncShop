@@ -15,31 +15,39 @@ import { orderPaySliceAction } from "../store/orderPaySlice";
 import { orderDeliverAction } from "../store/orderDeliverSlice";
 import FormContainer from "../components/FormContainer";
 
+// 주문화면
 const OrderScreen = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const { id } = useParams();
 
   const orderId = id;
+  // sdkReady State가 true이면 페이팔 결제 버튼이 나타나고, false이면 나타나지 않음
   const [sdkReady, setSdkReady] = useState(false);
 
+  // 주문 정보를 가져옴
   const orderDetails = useSelector((state) => state.orderDetails);
   const { order, loading, error } = orderDetails;
 
+  // 경제 정보를 가져옴
   const orderPay = useSelector((state) => state.orderPay);
-  const { loading: loadingPay, success: successPay } = orderPay;
+  const { loading: loadingPay, success: successPay } = orderPay; // successPay가 true이면 결제 성공, false이면 결제대기 상태
 
+  // 배송 정보를 가져옴
   const orderDeliver = useSelector((state) => state.orderDeliver);
-  const { loading: loadingDeliver, success: successDeliver } = orderDeliver;
+  const { loading: loadingDeliver, success: successDeliver } = orderDeliver; // successDeliver가 true이면 배송완료, false이면 배송대기 상태
 
+  // 유저 로그인 정보를 가져옴
   const userLogin = useSelector((state) => state.userLogin);
-  const { userInfo } = userLogin;
+  const { userInfo } = userLogin; // userInfo가 true이면 로그인, false이면 로그아웃 상태
 
   useEffect(() => {
+    // 로그인 정보(userInfo)가 없다면, 로그인 화면('/login')으로 이동
     if (!userInfo) {
       navigate("/login");
     }
 
+    // window 돔에 페이팔 정보가 없는 경우에만 실행되는 함수
     const addPayPalScript = async () => {
       const { data: clientId } = await axios.get("/api/config/paypal");
       const script = document.createElement("script");
@@ -52,11 +60,14 @@ const OrderScreen = () => {
       document.body.appendChild(script);
     };
 
+    // 주문정보가 없거나 결제가 성공되었거나 배송이 성공된 경우 실행
     if (!order || successPay || successDeliver) {
-      dispatch(orderPaySliceAction.ORDER_PAY_RESET());
-      dispatch(orderDeliverAction.ORDER_DELIVER_RESET());
+      dispatch(orderPaySliceAction.ORDER_PAY_RESET()); // 기존 결제 정보와 충돌되지 않도록 RESET
+      dispatch(orderDeliverAction.ORDER_DELIVER_RESET()); // 기존 배송 정보와 충돌되지 않도록 RESET
       dispatch(getOrderDetails(orderId));
+      // 결제정보가 없는 경우 실행
     } else if (!order.isPaid) {
+      // window 돔에 paypal 스크립트가 없다면, addPayPalScript 함수를 실행하여 추가후 setSdkReady() 실행
       if (!window.paypal) {
         addPayPalScript();
       } else {
