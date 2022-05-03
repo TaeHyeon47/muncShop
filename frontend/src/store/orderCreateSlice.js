@@ -6,7 +6,7 @@ const orderCreateSlice = createSlice({
   reducers: {
     // 주문 생성 요청
     ORDER_CREATE_REQUEST(state, action) {
-      state.loading = true; // 주문 생성 요청동안 로딩가 나타남
+      state.loading = true; // 주문 생성 요청동안 로딩바가 나타남
     },
     // 주문 생성 성공
     ORDER_CREATE_SUCCESS(state, action) {

@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 
 const orderSchema = mongoose.Schema(
   {
-    // 주문 유저 정보
+    // 주문유저 정보
     user: {
       type: mongoose.Schema.Types.ObjectId,
       required: true,
