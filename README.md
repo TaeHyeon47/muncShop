@@ -8,9 +8,6 @@
 <br>
 <img width="800px" alt="image" src="https://user-images.githubusercontent.com/96715209/171163820-e513d5ae-e882-42ee-89c2-8d83cc24673f.png">
 
-📌 **시연 영상** : 추가 예정 <br>
-📌 **PPT 자료** : 추가 예정
-
 <br>
 
 ## 1. [muncShop](https://muncshop.herokuapp.com/) 소개
