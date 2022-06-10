@@ -58,10 +58,10 @@
 
 ### 👨‍👧‍👧 서비스 및 서버 통신 흐름
 - 이커머스 프로젝트 경험을 바탕으로 '회원' -> '전시/상품' -> '결제' -> '배송'의 흐름으로 유저 Flow를 기획
-![image](https://user-images.githubusercontent.com/96715209/172963864-32ad6f3e-8c53-472e-beed-4755d9da3fd3.png)
+![image](https://user-images.githubusercontent.com/96715209/172965341-55c646d6-3d05-4caa-8eba-484ea78f9d98.png)
 - 클라이언트 배포 : heroku
 - Redux 패턴으로 서버와 Axios로 통신
-![image](https://user-images.githubusercontent.com/96715209/172962625-43705d58-8dbb-44c2-901a-258ebe97fd85.png)
+![image](https://user-images.githubusercontent.com/96715209/172965403-5446dd89-4d6b-4b45-a80c-643d7180243b.png)
 
 
 ### 👨‍👧‍👧 개발 목표
