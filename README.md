@@ -41,7 +41,7 @@
 - HTML5, CSS
 
 ### 👨‍👧‍👧 Frontend 사용 패키지
-- Redux, Reduxjs/toolkit, redux-devtools-extension
+- Redux, Reduxjs/toolkit
   - 중첩된 컴포넌트 구조 안에서, 데이터 참조와 상태 관리를 효율적으로 하기 위한 목적
   - 미들웨어로 서버와의 비동기 액션 보다 편하게 다루기 위해 redux-thunk, 개발환경에서 state / action 등 쉽게 추적하고 관리하기 위해 redux-devtools-extension 사용
 - Axios
