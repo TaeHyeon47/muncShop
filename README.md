@@ -3,7 +3,7 @@
 화장하기 귀찮은데, <br>
 쇼핑할때까지 복잡할 필요는 없잖아요. <br>
 <br>
-**All in One 색조 화장품 쇼핑몰 [muncShop](https://muncshop.herokuapp.com/).**<br>
+**All in One 색조 화장품 쇼핑몰! [muncShop](https://muncshop.herokuapp.com/).**<br>
 
 <br>
 <img width="800px" alt="image" src="https://user-images.githubusercontent.com/96715209/171163820-e513d5ae-e882-42ee-89c2-8d83cc24673f.png">
@@ -33,10 +33,10 @@
 - Design : 조태현
 
 ### 👨‍👧‍👧 개발 기간
-- 2022년 04월 7일 ~ 06월 07일 (총 8주)
+- 2022년 03월 7일 ~ 05월 07일 (총 8주)
 
 ### 👨‍👧‍👧 Front-end 사용 기술 스택
-- Javascript ES6
+- Javascript ES6+
 - React, Redux
 - HTML5, CSS
 
