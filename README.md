@@ -1,7 +1,7 @@
 # muncShop
 
 화장하기 귀찮은데, <br>
-쇼핑할때까지 복잡할 필요는 없잖아요. <br>
+쇼핑할때까지 복잡할 필요는 없잖아요! <br>
 <br>
 **All in One 색조 화장품 쇼핑몰! [muncShop](https://muncshop.herokuapp.com/).**<br>
 
