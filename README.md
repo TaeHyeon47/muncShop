@@ -3,7 +3,7 @@
 화장하기 귀찮은데, <br>
 쇼핑할때까지 복잡할 필요는 없잖아요! <br>
 <br>
-**All in One 색조 화장품 쇼핑몰! [muncShop](https://muncshop.herokuapp.com/).**<br>
+**All in One 색조 화장품 쇼핑몰! [muncShop](https://muncshop.onrender.com/).**<br>
 
 관리자 아이디 : admin@example.com / 비밀번호 : 1234
 
@@ -24,8 +24,7 @@
 <br>
 
 
-🔗  [사이트](https://muncshop.herokuapp.com/)  
-🔗  [시연 영상(Youtube)](https://www.youtube.com/watch?v=74VDU7rzv9Y)  
+🔗  [사이트](https://muncshop.onrender.com/)  
 
 ## 🐼 프로젝트 소개
 
