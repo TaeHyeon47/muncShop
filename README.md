@@ -5,6 +5,8 @@
 <br>
 **All in One 색조 화장품 쇼핑몰! [muncShop](https://muncshop.herokuapp.com/).**<br>
 
+관리자 아이디 : admin@example.com / 비밀번호 : 1234
+
 <br>
 <img width="800px" alt="image" src="https://user-images.githubusercontent.com/96715209/171163820-e513d5ae-e882-42ee-89c2-8d83cc24673f.png">
 
