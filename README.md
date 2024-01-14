@@ -24,7 +24,7 @@
 <br>
 
 
-🔗  [사이트](https://muncshop.onrender.com/)  
+🔗 배포 [사이트](https://muncshop.onrender.com/)  
 
 ## 🐼 프로젝트 소개
 
